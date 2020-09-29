@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JobToApp.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="JobTo" Style="{StaticResource Title}" HorizontalOptions="CenterAndExpand"/>
+            <BoxView Color="#D7CCFF" HeightRequest="1" Margin="0, 15, 0, 15"/>
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Frame StyleClass="FrameEntry" Grid.ColumnSpan="2" Grid.Row="0">
+                    <Entry Placeholder="Username"/>
+                </Frame>
+                <Frame StyleClass="FrameEntry" Grid.ColumnSpan="2" Grid.Row="1">
+                    <Entry Placeholder="Password"/>
+                </Frame>
+                <Button Text="Log In" Grid.Row="2"/>
+                <Button Text="Register" Grid.Column="1" Grid.Row="2" Clicked="GoRegister"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
