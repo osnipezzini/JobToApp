@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="3e0c58ca-a8a9-4090-a916-b0314e4f43f2"
-    Publisher="CN=8b7f2f78-864b-4ed3-b87e-17194819ff03"
+    Name="4b825757-b1e8-4de5-a551-0663b1af1cbf"
+    Publisher="CN=e09b3f20-7e49-41c8-ba4e-3e131232ee0b"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>JobToApp.UWP</DisplayName>
-    <PublisherDisplayName>8b7f2f78-864b-4ed3-b87e-17194819ff03</PublisherDisplayName>
+    <DisplayName>JobTo</DisplayName>
+    <PublisherDisplayName>e09b3f20-7e49-41c8-ba4e-3e131232ee0b</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -35,8 +35,8 @@
         DisplayName="JobTo"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="JobTo is a suite of applications for managing tickets and services for remote support companies."
-        BackgroundColor="transparent">
+        Description="Ticket Management System"
+        BackgroundColor="#623CEA">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />

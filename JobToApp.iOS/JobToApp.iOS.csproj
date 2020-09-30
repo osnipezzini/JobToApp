@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F6C10CB4-C10A-45AC-8811-31E37B3B4903}</ProjectGuid>
+    <ProjectGuid>{09BFA6C9-1147-4DFF-B4F5-8AAAB601B252}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Utility\Custom\CustomEntryRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,7 +130,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\JobToApp\JobToApp.csproj">
-      <Project>{276D861D-6A98-479F-AABE-C8E6F6EBF635}</Project>
+      <Project>{4A43F885-4051-44BC-9EBE-31813F54ACE0}</Project>
       <Name>JobToApp</Name>
     </ProjectReference>
   </ItemGroup>

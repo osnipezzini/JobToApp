@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using JobToApp.Services;
+using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,6 +16,20 @@ namespace JobToApp.Views
         private void GoRegister(object sender, EventArgs e)
         {
             Navigation.PushAsync(new RegisterPage());
+        }
+
+        private async void DoLogin(object sender, EventArgs e)
+        {
+            var service = new UserService();
+            bool login = await service.LoginAsync(txtUsername.Text, txtPassword.Text);
+            if (login)
+            {
+                App.Current.MainPage = new NavigationPage(new MainPage());
+            }
+            else
+            {
+                await DisplayAlert("Erro", "Dados incorretos", "Tente novamente");
+            }
         }
     }
 }

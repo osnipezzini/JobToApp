@@ -17,12 +17,12 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Frame StyleClass="FrameEntry" Grid.ColumnSpan="2" Grid.Row="0">
-                    <Entry Placeholder="Username"/>
+                    <Entry Placeholder="Username" x:Name="txtUsername"/>
                 </Frame>
                 <Frame StyleClass="FrameEntry" Grid.ColumnSpan="2" Grid.Row="1">
-                    <Entry Placeholder="Password"/>
+                    <Entry Placeholder="Password" x:Name="txtPassword" IsPassword="True"/>
                 </Frame>
-                <Button Text="Log In" Grid.Row="2"/>
+                <Button Text="Log In" Clicked="DoLogin" Grid.Row="2"/>
                 <Button Text="Register" Grid.Column="1" Grid.Row="2" Clicked="GoRegister"/>
             </Grid>
             

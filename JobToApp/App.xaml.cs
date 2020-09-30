@@ -1,7 +1,5 @@
 ﻿using JobToApp.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace JobToApp
 {
@@ -10,6 +8,7 @@ namespace JobToApp
         public App()
         {
             InitializeComponent();
+
             MainPage = new NavigationPage(new LoginPage());
         }
 
